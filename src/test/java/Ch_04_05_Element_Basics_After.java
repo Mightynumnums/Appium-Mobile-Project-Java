@@ -1,6 +1,5 @@
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
 import java.net.URL;
 import org.junit.After;
 import org.junit.Before;
@@ -10,13 +9,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Ch_04_05_Element_Basics_After {
 
-//    private static final String APP = "https://github.com/cloudgrey-io/the-app/releases/download/v1.9.0/TheApp-v1.9.0.apk";
-    private static final String APP = "https://github.com/cloudgrey-io/the-app/releases/download/v1.9.0/TheApp-v1.9.0.app.zip";
+public class Ch_04_05_Element_Basics_After {
+    private static final String APP = "https://github.com/cloudgrey-io/the-app/releases/download/v1.9.0/TheApp-v1.9.0.apk";
     private static final String APPIUM = "http://localhost:4723/wd/hub";
 
-    private IOSDriver driver;
+    private AndroidDriver driver;
 
     @Before
     public void setUp() throws Exception {
@@ -26,7 +24,7 @@ public class Ch_04_05_Element_Basics_After {
         caps.setCapability("deviceName", "iPhone 8");
         caps.setCapability("automationName", "XCUITest");
         caps.setCapability("app", APP);
-        driver = new IOSDriver(new URL(APPIUM), caps);
+        driver = new AndroidDriver(new URL(APPIUM), caps);
     }
 
     @After
@@ -52,8 +50,9 @@ public class Ch_04_05_Element_Basics_After {
         WebElement login = driver.findElement(MobileBy.AccessibilityId("loginBtn"));
         login.click();
 
-        try { Thread.sleep(1000); } catch (Exception ign) {}
+        WebElement loginText = wait.until(ExpectedConditions.presenceOfElementLocated(
+                MobileBy.xpath("//android.widget.TextView[contains(@text, 'You are logged in')]")));
 
-//        assert(loginText.getText().contains("alice"));
+        assert (loginText.getText().contains("alice"));
     }
 }
