@@ -1,9 +1,11 @@
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import java.net.URL;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,7 +19,7 @@ public class Ch_04_04_Waiting_For_Elements_After {
 
     @Before
     public void setUp() throws Exception {
-        DesiredCapabilities caps = new DesiredCapabilities();
+        DesiredCapabilities caps = new D9desiredCapabilities();
         caps.setCapability("platformName", "Android");
         caps.setCapability("platformVersion", "9");
         caps.setCapability("deviceName", "Android Emulator");
@@ -36,6 +38,11 @@ public class Ch_04_04_Waiting_For_Elements_After {
     @Test
     public void test() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Login Screen")));
+        WebElement screen = wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Login Screen")));
+        screen.click();
+
+        try { Thread.sleep(1000); } catch (Exception ign) {}
+        // getPage source will give you a log of the page elements/structure
+        System.out.println(driver.getPageSource());
     }
 }

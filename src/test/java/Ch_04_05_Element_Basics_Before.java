@@ -37,5 +37,6 @@ public class Ch_04_05_Element_Basics_Before {
     public void test() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Login Screen")));
+
     }
 }
