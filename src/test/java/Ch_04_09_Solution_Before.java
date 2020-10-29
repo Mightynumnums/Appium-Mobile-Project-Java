@@ -37,14 +37,19 @@ public class Ch_04_09_Solution_Before {
     public void test() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement screen = wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Echo Box")));
+
         screen.click();
+
         WebElement inputField =  wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("messageInput")));
+
         inputField.sendKeys("Hello World!");
+
         WebElement saveButton = driver.findElement(MobileBy.AccessibilityId("messageSaveBtn"));
+
         saveButton.click();
 
-        //wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("hello world")));
         WebElement message = wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Hello World!")));
+
         assert(message.getText().contains("Hello World!"));
     }
 }
