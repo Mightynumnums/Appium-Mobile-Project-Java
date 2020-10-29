@@ -19,7 +19,7 @@ public class Ch_04_04_Waiting_For_Elements_After {
 
     @Before
     public void setUp() throws Exception {
-        DesiredCapabilities caps = new D9desiredCapabilities();
+        DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "Android");
         caps.setCapability("platformVersion", "9");
         caps.setCapability("deviceName", "Android Emulator");
