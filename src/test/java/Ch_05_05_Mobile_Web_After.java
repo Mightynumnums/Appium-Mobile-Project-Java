@@ -34,10 +34,10 @@ public class Ch_05_05_Mobile_Web_After {
 
     @Test
     public void test() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver,10);
         driver.get("https://appiumpro.com");
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".toggleMenu"))).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("toggleMenu"))).click();
         driver.findElement(By.linkText("All Editions")).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".editionList")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("smallHero___2kJmy")));
     }
 }
