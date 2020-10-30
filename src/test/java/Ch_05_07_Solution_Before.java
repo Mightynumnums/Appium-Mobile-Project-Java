@@ -2,8 +2,10 @@ import java.net.URL;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Ch_05_07_Solution_Before {
@@ -35,5 +37,15 @@ public class Ch_05_07_Solution_Before {
     public void test() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         driver.get(SITE);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("toggleMenu"))).click();
+        driver.findElement(By.linkText("Contact")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("smallHero___2kJmy")));
+        driver.findElement(By.id("contactEmail")).sendKeys("youremail@gmail.com");
+        driver.findElement(By.id("contactText")).sendKeys("Some very important text here.");
+        driver.findElement(By.cssSelector("input[type='submit']")).click();
+        driver.findElement(By.className("button___3QUY5")).click();
+        String response = wait.until(ExpectedConditions.presenceOfElementLocated(By.className("error___2pSWM"))).getText();
+        assert(response.contains("Your message could not be sent due to an error. The error message was: You must fill out the Captcha box"));
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.className("response___1yZzw error___2pSWM")));
     }
 }
