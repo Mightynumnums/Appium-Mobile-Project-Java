@@ -46,6 +46,5 @@ public class Ch_05_07_Solution_Before {
         driver.findElement(By.className("button___3QUY5")).click();
         String response = wait.until(ExpectedConditions.presenceOfElementLocated(By.className("error___2pSWM"))).getText();
         assert(response.contains("Your message could not be sent due to an error. The error message was: You must fill out the Captcha box"));
-        //wait.until(ExpectedConditions.presenceOfElementLocated(By.className("response___1yZzw error___2pSWM")));
     }
 }

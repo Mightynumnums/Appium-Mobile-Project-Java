@@ -16,3 +16,8 @@ A simple repo that has appium tests.
  Use this link below:
  
  `https://docs.google.com/document/d/1lzeY6dN2GbuH4QRO6kXObo6YO3rQHoA1TWx_I_B4NvY/edit#heading=h.8movoomh2bcr`
+
+*Please be advised that the app might have been changed and/or redesigned,
+so it's a good idea to make sure the selectors you are using are still the same.
+
+Happy Testing.
