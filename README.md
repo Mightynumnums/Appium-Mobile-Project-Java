@@ -6,7 +6,7 @@ A simple repo that has appium tests.
 - Each part will have the before and after class.
 - In order to run the test:
     - Make sure you have your Appium server running
-    - Make sure you have your Android imltr running
+    - Make sure you have your Android emulator or iOS simulator running
  - To run the test, click the arrow next to the @Test
     - That should trigger your Appium server to connect
      to the app and perform the test
@@ -17,7 +17,9 @@ A simple repo that has appium tests.
  
  `https://docs.google.com/document/d/1lzeY6dN2GbuH4QRO6kXObo6YO3rQHoA1TWx_I_B4NvY/edit#heading=h.8movoomh2bcr`
 
-*Please be advised that the app might have been changed and/or redesigned,
+*Please be advised that the app the tests run against might have been changed and/or redesigned,
 so it's a good idea to make sure the selectors you are using are still the same.
+
+If anything, this repo is just an example of how you can set up simple tests to test your app.
 
 Happy Testing.
