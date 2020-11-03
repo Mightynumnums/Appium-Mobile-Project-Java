@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SampleSauceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-03T17:55:39" hostname="SL-0465" time="285.466">
+  <properties/>
+  <testcase name="test" classname="SampleSauceTest" time="285.466"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Nov 03, 2020 10:00:16 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>
