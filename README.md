@@ -16,7 +16,7 @@
    * Run the test by simply clicking on the green arrow 
     
  #### If you are running a test on Labs TEST OBJECT legacy RDC
- 
+  * Make sure to add your own "testobject_api_key" (your app in Test Object)
  
  To get a more details on what else you might need to test with Appium:
  
