@@ -18,11 +18,6 @@
  #### If you are running a test on Labs TEST OBJECT legacy RDC
   * Make sure to add your own "testobject_api_key" (your app in Test Object)
  
- To get a more details on what else you might need to test with Appium:
- 
- Use this link below:
- 
- `https://docs.google.com/document/d/1lzeY6dN2GbuH4QRO6kXObo6YO3rQHoA1TWx_I_B4NvY/edit#heading=h.8movoomh2bcr`
 
 *Please be advised that the app the tests run against might have been changed and/or redesigned,
 so it's a good idea to make sure the selectors you are using are still the same.
