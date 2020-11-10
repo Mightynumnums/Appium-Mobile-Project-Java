@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Ch_05_07_Solution_Before {
+public class Mobile_Web_Captcha {
 
     private static final String APPIUM = "http://localhost:4723/wd/hub";
     private static final String SITE = "https://appiumpro.com";

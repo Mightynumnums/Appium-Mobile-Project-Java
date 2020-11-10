@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class TestObjectTest {
+public class Test_Object_Test {
     public AppiumDriver driver;
 
     @Before

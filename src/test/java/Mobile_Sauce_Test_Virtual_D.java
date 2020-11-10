@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 
-public class SampleSauceTest {
+public class Mobile_Sauce_Test_Virtual_D {
 
     private static final String sauceUser = System.getenv("SAUCE_USERNAME");
     private static final String sauceKey = System.getenv("SAUCE_ACCESS_KEY");
