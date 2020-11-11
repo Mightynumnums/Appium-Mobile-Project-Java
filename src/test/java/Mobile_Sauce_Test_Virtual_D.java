@@ -5,6 +5,7 @@ import java.net.URL;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -24,6 +25,9 @@ public class Mobile_Sauce_Test_Virtual_D {
     @Before
     public void  setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
+        MutableCapabilities sauceOptions = new MutableCapabilities();
+        capabilities.setCapability("name", "Java Mobile SL test");
+        capabilities.setCapability("build", "Java SL build1");
         capabilities.setCapability("appiumVersion", "1.18.1");
         capabilities.setCapability("deviceName","Samsung Galaxy S8 GoogleAPI Emulator");
         capabilities.setCapability("deviceOrientation", "portrait");
@@ -33,6 +37,8 @@ public class Mobile_Sauce_Test_Virtual_D {
         capabilities.setCapability("appPackage", "com.swaglabsmobileapp");
         capabilities.setCapability("appActivity","com.swaglabsmobileapp.MainActivity");
         capabilities.setCapability("app", APP );
+        sauceOptions.setCapability("name", "Mobile Sauce Test");
+        sauceOptions.setCapability("tags", "tag1");
         driver =  new AndroidDriver(new URL(url), capabilities);
         try { Thread.sleep(3000); } catch (Exception ign) {}
     }

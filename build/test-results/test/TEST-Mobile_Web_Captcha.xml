@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Mobile_Web_Captcha" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-11T16:16:01" hostname="SL-0465" time="169.358">
+  <properties/>
+  <testcase name="test" classname="Mobile_Web_Captcha" time="169.358"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Nov 11, 2020 8:18:09 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
