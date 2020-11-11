@@ -12,7 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Setting_Location {
+public class Get_Geo_Location_iOS {
     private static final String sauceUser = System.getenv("SAUCE_USERNAME");
     private static final String sauceKey = System.getenv("SAUCE_ACCESS_KEY");
     String APP = "storage:e6f17fc9-01ab-484b-83f4-4fc6302fa179";
