@@ -4,9 +4,10 @@ import java.net.URL;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class Test_Object_Test {
+public class Test_Object_Android_Test {
     public AppiumDriver driver;
 
     @Before
@@ -27,7 +28,10 @@ public class Test_Object_Test {
     }
 
     @After
-    public void tearDown() {
-        this.driver.quit();
+    public void cleanUpAfterTestMethod() {
+        if (driver != null) {
+            ((JavascriptExecutor) driver).executeScript("sauce:job-result=" + ("passed"));
+            driver.quit();
+        }
     }
 }

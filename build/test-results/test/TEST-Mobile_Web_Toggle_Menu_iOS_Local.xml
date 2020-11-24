@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Mobile_Web_Toggle_Menu_iOS_Local" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-24T01:21:05" hostname="SL-0465" time="31.166">
+  <properties/>
+  <testcase name="test" classname="Mobile_Web_Toggle_Menu_iOS_Local" time="31.166"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Nov 23, 2020 5:21:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

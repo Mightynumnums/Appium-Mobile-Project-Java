@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 
-public class Mobile_Sauce_Test_Virtual_D {
+public class Mobile_Sauce_Test_Virtual_D_SauceLabs_Android {
 
     private static final String sauceUser = System.getenv("SAUCE_USERNAME");
     private static final String sauceKey = System.getenv("SAUCE_ACCESS_KEY");

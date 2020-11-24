@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Mobile_Web_Toggle_Menu {
+public class Mobile_Web_Toggle_Menu_iOS_Local {
 
     private static final String APPIUM = "http://localhost:4723/wd/hub";
 

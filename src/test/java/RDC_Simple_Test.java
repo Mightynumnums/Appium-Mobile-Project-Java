@@ -3,6 +3,7 @@ import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,15 +19,14 @@ public class RDC_Simple_Test {
     private static final String sauceKey = System.getenv("SAUCE_ACCESS_KEY");
     // This is the app stored in the SL storage
     String APP = "storage:9982ef38-4770-4bd7-88f4-a605d901e155";
-    //String APP="storage: 7271be23-538a-4d80-b807-c0e902e387d2";
     String url = "http://"+sauceUser+":"+sauceKey+"@ondemand.us-west-1.saucelabs.com/wd/hub";
 
     private AndroidDriver driver;
 
-
     @Before
     public void  setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("name", "RDC Android Simple Test");
         capabilities.setCapability("appiumVersion", "1.18.1");
         capabilities.setCapability("deviceOrientation", "portrait");
         capabilities.setCapability("browserName", "chrome");
@@ -37,13 +37,6 @@ public class RDC_Simple_Test {
         capabilities.setCapability("app", APP );
         driver =  new AndroidDriver(new URL(url), capabilities);
         try { Thread.sleep(3000); } catch (Exception ign) {}
-    }
-
-    @After
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
     }
 
     @Test
@@ -58,6 +51,14 @@ public class RDC_Simple_Test {
         WebElement loginBtn = driver.findElement(MobileBy.AccessibilityId("test-LOGIN"));
         loginBtn.click();
         WebElement products = wait.until((ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("test-PRODUCTS"))));
+    }
+
+    @After
+    public void cleanUpAfterTestMethod() {
+        if (driver != null) {
+            ((JavascriptExecutor) driver).executeScript("sauce:job-result=" + ("passed"));
+            driver.quit();
+        }
     }
 }
 

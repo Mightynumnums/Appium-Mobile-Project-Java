@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Mobile_Web_Captcha_IOS {
+public class Mobile_Web_Captcha_iOS_Local {
 
     private static final String APPIUM = "http://localhost:4723/wd/hub";
     private static final String SITE = "https://appiumpro.com";
@@ -18,27 +18,15 @@ public class Mobile_Web_Captcha_IOS {
     @Before
     public void setUp() throws Exception {
         DesiredCapabilities caps = new DesiredCapabilities();
-//        caps.setCapability("platformName", "iOS");
-//        caps.setCapability("platformVersion", "12.2");
-//        caps.setCapability("deviceName", "iPhone 8");
-//        caps.setCapability("automationName", "XCUITest");
-//        caps.setCapability("browserName", "Safari");
-
         caps.setCapability("platformName", "iOS");
-        caps.setCapability("platformVersion", "13");
-        caps.setCapability("deviceName", "[6-8]|X|11");
-       // caps.setCapability("appiumVersion", "1.17.0");
+        caps.setCapability("platformVersion", "12.2");
+        caps.setCapability("deviceName", "iPhone 8");
         caps.setCapability("automationName", "XCUITest");
         caps.setCapability("browserName", "Safari");
+        caps.setCapability("appiumVersion", "1.17.0");
         driver = new RemoteWebDriver(new URL(APPIUM), caps);
     }
 
-    @After
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
 
     @Test
     public void test() {
@@ -53,5 +41,12 @@ public class Mobile_Web_Captcha_IOS {
         driver.findElement(By.className("button___3QUY5")).click();
         String response = wait.until(ExpectedConditions.presenceOfElementLocated(By.className("error___2pSWM"))).getText();
         assert(response.contains("Your message could not be sent due to an error. The error message was: You must fill out the Captcha box"));
+    }
+
+    @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
