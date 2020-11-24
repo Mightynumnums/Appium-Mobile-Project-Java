@@ -18,9 +18,11 @@ public class RDC_Simple_Test {
     private static final String sauceKey = System.getenv("SAUCE_ACCESS_KEY");
     // This is the app stored in the SL storage
     String APP = "storage:9982ef38-4770-4bd7-88f4-a605d901e155";
+    //String APP="storage: 7271be23-538a-4d80-b807-c0e902e387d2";
     String url = "http://"+sauceUser+":"+sauceKey+"@ondemand.us-west-1.saucelabs.com/wd/hub";
 
     private AndroidDriver driver;
+
 
     @Before
     public void  setUp() throws MalformedURLException {

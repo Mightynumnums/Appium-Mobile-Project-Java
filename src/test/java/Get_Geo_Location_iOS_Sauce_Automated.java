@@ -12,7 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Get_Geo_Location_iOS {
+public class Get_Geo_Location_iOS_Sauce_Automated {
     private static final String sauceUser = System.getenv("SAUCE_USERNAME");
     private static final String sauceKey = System.getenv("SAUCE_ACCESS_KEY");
     String APP = "storage:e6f17fc9-01ab-484b-83f4-4fc6302fa179";
@@ -23,13 +23,14 @@ public class Get_Geo_Location_iOS {
     @Before
     public void  setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = DesiredCapabilities.iphone();
-        capabilities.setCapability("name", "Set Location test IOS");
+        capabilities.setCapability("name", "Get Location test IOS Live Sauce");
         capabilities.setCapability("platformName","iOS");
         capabilities.setCapability("deviceName","iPhone 7 Simulator");
         capabilities.setCapability("deviceOrientation", "portrait");
         capabilities.setCapability("browserName", "");
         capabilities.setCapability("platformVersion","12.2");
         capabilities.setCapability("automationName", "XCUITest");
+        //capabilities.setCapability("appiumVersion", "1.17.0");
         capabilities.setCapability("app", APP );
         driver =  new IOSDriver(new URL(url), capabilities);
 
@@ -50,14 +51,13 @@ public class Get_Geo_Location_iOS {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("test-Username"))).sendKeys("standard_user");
         driver.findElement(By.id("test-Password")).sendKeys("secret_sauce");
         driver.findElement(By.id("test-LOGIN")).click();
-      WebElement testMenuHamburger = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("test-Menu")));
+        WebElement testMenuHamburger = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("test-Menu")));
         testMenuHamburger.click();
         WebElement geoLocationLink = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("test-GEO LOCATION")));
         geoLocationLink.click();
         driver.switchTo().alert().accept();
-     WebElement text = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Below you will find the latitude and longitude. You can use Appium to change them with this link.")));
-  String textEl = text.getText();
-//  assert(textEl.contains("Below you will find the latitude and longitude. You can use Appium to change them with this link."));
+        WebElement text = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Below you will find the latitude and longitude. You can use Appium to change them with this link.")));
+        String textEl = text.getText();
         WebElement latitude = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("test-latitude")));
         String latitudeResult = latitude.getText();
         assert(latitudeResult.contains("37."));

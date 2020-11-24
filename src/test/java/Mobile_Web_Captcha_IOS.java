@@ -18,9 +18,16 @@ public class Mobile_Web_Captcha_IOS {
     @Before
     public void setUp() throws Exception {
         DesiredCapabilities caps = new DesiredCapabilities();
+//        caps.setCapability("platformName", "iOS");
+//        caps.setCapability("platformVersion", "12.2");
+//        caps.setCapability("deviceName", "iPhone 8");
+//        caps.setCapability("automationName", "XCUITest");
+//        caps.setCapability("browserName", "Safari");
+
         caps.setCapability("platformName", "iOS");
-        caps.setCapability("platformVersion", "12.2");
-        caps.setCapability("deviceName", "iPhone 8");
+        caps.setCapability("platformVersion", "13");
+        caps.setCapability("deviceName", "[6-8]|X|11");
+       // caps.setCapability("appiumVersion", "1.17.0");
         caps.setCapability("automationName", "XCUITest");
         caps.setCapability("browserName", "Safari");
         driver = new RemoteWebDriver(new URL(APPIUM), caps);

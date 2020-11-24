@@ -5,6 +5,7 @@ import java.net.URL;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -25,27 +26,28 @@ public class Mobile_Sauce_Test_Virtual_D {
     @Before
     public void  setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        //MutableCapabilities sauceOptions = new MutableCapabilities();
-        capabilities.setCapability("name", "Java Mobile SL test");
-        capabilities.setCapability("build", "Java SL build1");
+        MutableCapabilities sauceOptions = new MutableCapabilities();
+        capabilities.setCapability("name", "Android Virtual Device Test Sauce");
         capabilities.setCapability("appiumVersion", "1.18.1");
         capabilities.setCapability("deviceName","Samsung Galaxy S8 GoogleAPI Emulator");
         capabilities.setCapability("deviceOrientation", "portrait");
         capabilities.setCapability("browserName", "");
         capabilities.setCapability("platformVersion","8.1");
         capabilities.setCapability("platformName","Android");
-//        capabilities.setCapability("appPackage", "com.swaglabsmobileapp");
-//        capabilities.setCapability("appActivity","com.swaglabsmobileapp.MainActivity");
+        capabilities.setCapability("appPackage", "com.swaglabsmobileapp");
+        capabilities.setCapability("appActivity","com.swaglabsmobileapp.MainActivity");
         capabilities.setCapability("app", APP );
-//        sauceOptions.setCapability("name", "Mobile Sauce Test");
-//        sauceOptions.setCapability("tags", "tag1");
+        sauceOptions.setCapability("name", "Mobile Sauce Test");
+        sauceOptions.setCapability("tags", "Android Emul Test");
         driver =  new AndroidDriver(new URL(url), capabilities);
         try { Thread.sleep(3000); } catch (Exception ign) {}
     }
 
-        @After
-            public void tearDown() {
+
+    @After
+    public void cleanUpAfterTestMethod() {
         if (driver != null) {
+            ((JavascriptExecutor) driver).executeScript("sauce:job-result=" + ("passed"));
             driver.quit();
         }
     }
