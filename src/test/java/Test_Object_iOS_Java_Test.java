@@ -7,18 +7,18 @@ import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class Test_Object_Android_Test {
+public class Test_Object_iOS_Java_Test {
     public AppiumDriver driver;
 
     @Before
     public void setUp() throws Exception {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("testobject_api_key", "D98E6C58A01C4B3B954087B35E605C63");
-        caps.setCapability("deviceName", "Samsung Galaxy S9");
-        caps.setCapability("platformName", "Android");
+        caps.setCapability("deviceName", "iPhone ([6-8]|X|11)");
+        caps.setCapability("platformName", "iOS");
         caps.setCapability("deviceOrientation", "portrait");
-        caps.setCapability("browserName", "Chrome");
-        caps.setCapability("name", "Android Test Object Java Test");
+        caps.setCapability("browserName", "Safari");
+        caps.setCapability("name", "iOS Test Object Java Test");
         this.driver = new AppiumDriver(new URL("https://us1.appium.testobject.com/wd/hub"), caps);
     }
 
