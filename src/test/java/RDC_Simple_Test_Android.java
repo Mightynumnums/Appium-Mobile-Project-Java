@@ -14,6 +14,7 @@ import java.net.URL;
 
 
 public class RDC_Simple_Test_Android {
+    Boolean result;
 
     private static final String sauceUser = System.getenv("SAUCE_USERNAME");
     private static final String sauceKey = System.getenv("SAUCE_ACCESS_KEY");
@@ -56,7 +57,6 @@ public class RDC_Simple_Test_Android {
     @After
     public void cleanUpAfterTestMethod() {
         if (driver != null) {
-            ((JavascriptExecutor) driver).executeScript("sauce:job-result=" + ("passed"));
             driver.quit();
         }
     }

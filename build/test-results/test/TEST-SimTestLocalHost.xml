@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SimTestLocalHost" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-03T22:54:44" hostname="SL-0465" time="54.947">
+  <properties/>
+  <testcase name="test" classname="SimTestLocalHost" time="54.947"/>
+  <system-out><![CDATA[Capabilities {appiumVersion: 1.17.1, browserName: Safari, deviceName: iPhone 8 Simulator, platformName: iOS, platformVersion: 13.0, sauce:options: Capabilities {name: Sauce T...}
+]]></system-out>
+  <system-err><![CDATA[Dec 03, 2020 2:55:34 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

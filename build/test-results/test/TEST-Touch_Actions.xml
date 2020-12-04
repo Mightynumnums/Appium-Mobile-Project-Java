@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Touch_Actions" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-25T00:37:41" hostname="SL-0465" time="32.307">
+  <properties/>
+  <testcase name="test" classname="Touch_Actions" time="32.307"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Nov 24, 2020 4:38:04 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
