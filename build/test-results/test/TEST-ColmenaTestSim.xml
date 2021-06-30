@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ColmenaTestSim" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-27T23:24:40" hostname="SL-0465" time="67.684">
+  <properties/>
+  <testcase name="test" classname="ColmenaTestSim" time="67.684"/>
+  <system-out><![CDATA[aleks.shineleva]]></system-out>
+  <system-err><![CDATA[May 27, 2021 4:25:43 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>

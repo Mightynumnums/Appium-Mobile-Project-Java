@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BleacherRepTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-16T19:39:25" hostname="SL-0465" time="152.191">
+  <properties/>
+  <testcase name="test" classname="BleacherRepTest" time="152.191"/>
+  <system-out><![CDATA[Capabilities {app: storage:677b754a-9ca8-4c06-..., appiumVersion: latest, browserName: , deviceName: iPhone 11 Simulator, fullReset: true, noReset: false, platformName: iOS, platformVersion: 13.0, sauce:options: Capabilities {name: Beacher...}
+]]></system-out>
+  <system-err><![CDATA[Apr 16, 2021 12:41:51 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

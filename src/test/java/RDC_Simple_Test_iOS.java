@@ -1,5 +1,4 @@
 import io.appium.java_client.MobileBy;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.junit.After;
 import org.junit.Before;
@@ -19,7 +18,7 @@ public class RDC_Simple_Test_iOS {
     private static final String sauceUser = System.getenv("SAUCE_USERNAME");
     private static final String sauceKey = System.getenv("SAUCE_ACCESS_KEY");
     // This is the app stored in the SL storage
-    String APP = "storage:7271be23-538a-4d80-b807-c0e902e387d2";
+    String APP = "storage:2a892a46-849b-4b09-bfb1-acc9dd446d5e";
     String url = "http://"+sauceUser+":"+sauceKey+"@ondemand.us-west-1.saucelabs.com/wd/hub";
 
     private IOSDriver driver;
@@ -27,10 +26,10 @@ public class RDC_Simple_Test_iOS {
     @Before
     public void  setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("name", "RDC IOS Simple Test");
+        capabilities.setCapability("name", "RDC IOS Simple noReset removed");
         capabilities.setCapability("platformName","iOS");
-        capabilities.setCapability("platformVersion","13");
-        capabilities.setCapability("deviceName","iPhone ([6-8]|X|11)");
+        capabilities.setCapability("platformVersion","14.3");
+        capabilities.setCapability("deviceName","iPhone_11_14_real_us");
         capabilities.setCapability("appiumVersion", "1.18.1");
         capabilities.setCapability("deviceOrientation", "portrait");
         capabilities.setCapability("browserName", "Safari");
@@ -44,14 +43,14 @@ public class RDC_Simple_Test_iOS {
     public void test() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
          //If you want to have the simplest test EVER, just run the get method for a url (ex below) and nothing else.
-        driver.get("https://www.google.com/");
-//        WebElement userNameInput = wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("test-Username")));
-//        userNameInput.sendKeys("standard_user");
-//        WebElement passwordInput = driver.findElement(MobileBy.AccessibilityId("test-Password"));
-//        passwordInput.sendKeys("secret_sauce");
-//        WebElement loginBtn = driver.findElement(MobileBy.AccessibilityId("test-LOGIN"));
-//        loginBtn.click();
-//        WebElement products = wait.until((ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("test-PRODUCTS"))));
+        //driver.get("https://www.google.com/");
+        WebElement userNameInput = wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("test-Username")));
+        userNameInput.sendKeys("standard_user");
+        WebElement passwordInput = driver.findElement(MobileBy.AccessibilityId("test-Password"));
+        passwordInput.sendKeys("secret_sauce");
+        WebElement loginBtn = driver.findElement(MobileBy.AccessibilityId("test-LOGIN"));
+        loginBtn.click();
+        WebElement products = wait.until((ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("test-PRODUCTS"))));
     }
 
     @After
@@ -59,6 +58,8 @@ public class RDC_Simple_Test_iOS {
         if (driver != null) {
             ((JavascriptExecutor) driver).executeScript("sauce:job-result=" + ("passed"));
             driver.quit();
+        } else {
+            ((JavascriptExecutor) driver).executeScript("sauce:job-result=" + ("failed"));
         }
     }
 }

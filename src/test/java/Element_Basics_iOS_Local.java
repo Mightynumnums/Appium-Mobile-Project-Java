@@ -21,7 +21,7 @@ public class Element_Basics_iOS_Local {
     public void setUp() throws Exception {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "iOS");
-        caps.setCapability("platformVersion", "12.2");
+        caps.setCapability("platformVersion", "13.0");
         caps.setCapability("deviceName", "iPhone 8");
         caps.setCapability("automationName", "XCUITest");
         caps.setCapability("app", APP);

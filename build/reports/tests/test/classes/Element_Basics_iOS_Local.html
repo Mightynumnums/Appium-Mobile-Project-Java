@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">9.261s</div>
+<div class="counter">1.707s</div>
 <p>duration</p>
 </div>
 </td>
@@ -73,15 +73,15 @@
 <a name="test"></a>
 <h3 class="failures">test</h3>
 <span class="code">
-<pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/20201023-2952-1kv8br2.2pf9/TheApp-v1.9.0.app/Info.plist'
+<pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/202129-94017-1cqiuiz.kaje/TheApp-v1.9.0.app/Info.plist'
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SL-0465', ip: '2605:e000:1301:5c1:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
+System info: host: 'SL-0465', ip: '2603:8000:d203:2500:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
 Driver info: driver.version: IOSDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/20201023-2952-1kv8br2.2pf9/TheApp-v1.9.0.app/Info.plist'
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/202129-94017-1cqiuiz.kaje/TheApp-v1.9.0.app/Info.plist'
     at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
     at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:381:37)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SL-0465', ip: '2605:e000:1301:5c1:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
+System info: host: 'SL-0465', ip: '2603:8000:d203:2500:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
 	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
@@ -119,8 +119,7 @@ Driver info: driver.version: IOSDriver
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -129,8 +128,7 @@ Driver info: driver.version: IOSDriver
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -150,12 +148,12 @@ Caused by: java.lang.reflect.InvocationTargetException
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-	... 60 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/20201023-2952-1kv8br2.2pf9/TheApp-v1.9.0.app/Info.plist'
+	... 58 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/202129-94017-1cqiuiz.kaje/TheApp-v1.9.0.app/Info.plist'
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SL-0465', ip: '2605:e000:1301:5c1:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
+System info: host: 'SL-0465', ip: '2603:8000:d203:2500:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
 Driver info: driver.version: IOSDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/20201023-2952-1kv8br2.2pf9/TheApp-v1.9.0.app/Info.plist'
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/202129-94017-1cqiuiz.kaje/TheApp-v1.9.0.app/Info.plist'
     at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
     at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:381:37)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -175,7 +173,7 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
 	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
 	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	... 65 more
+	... 63 more
 </pre>
 </span>
 </div>
@@ -192,7 +190,7 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
 </thead>
 <tr>
 <td class="failures">test</td>
-<td>9.261s</td>
+<td>1.707s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -205,7 +203,7 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.0</a> at Nov 23, 2020 4:07:11 PM</p>
+<a href="http://www.gradle.org">Gradle 4.0</a> at Mar 9, 2021 4:07:09 PM</p>
 </div>
 </div>
 </body>

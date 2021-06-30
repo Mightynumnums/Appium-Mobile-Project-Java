@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IOSSimW3CTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-08T16:36:35" hostname="SL-0465" time="63.983">
+  <properties/>
+  <testcase name="test" classname="IOSSimW3CTest" time="63.983"/>
+  <system-out><![CDATA[aleks.shinelevahttps://app.eu-central-1.saucelabs.com/tests/90d5f1aaa36b4fb1a5f631ddea2ea515?auth=9886fd1c6b8a7f40554ef84b63a94ff0
+]]></system-out>
+  <system-err><![CDATA[Jun 08, 2021 9:37:34 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

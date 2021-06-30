@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CustomerTestWebiOSSIMW3C" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-27T21:05:01" hostname="SL-0465" time="98.438">
+  <properties/>
+  <testcase name="test" classname="CustomerTestWebiOSSIMW3C" time="98.438"/>
+  <system-out><![CDATA[aleks.shineleva]]></system-out>
+  <system-err><![CDATA[May 27, 2021 2:06:28 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

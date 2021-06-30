@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Life360Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-11T19:04:52" hostname="SL-0465" time="57.891">
+  <properties/>
+  <testcase name="test" classname="Life360Test" time="57.891"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jun 11, 2021 12:05:43 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>

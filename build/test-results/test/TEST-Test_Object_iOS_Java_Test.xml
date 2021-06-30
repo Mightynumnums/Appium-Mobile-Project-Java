@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test_Object_iOS_Java_Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-24T18:42:39" hostname="SL-0465" time="38.769">
+<testsuite name="Test_Object_iOS_Java_Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-21T21:58:49" hostname="SL-0465" time="36.033">
   <properties/>
-  <testcase name="testMethod" classname="Test_Object_iOS_Java_Test" time="38.769"/>
+  <testcase name="testMethod" classname="Test_Object_iOS_Java_Test" time="36.033"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Nov 24, 2020 10:43:10 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[Jan 21, 2021 1:59:19 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: OSS
 ]]></system-err>
 </testsuite>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Element_Basics_iOS_Local" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-11-24T00:07:02" hostname="SL-0465" time="9.261">
+<testsuite name="Element_Basics_iOS_Local" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-03-10T00:07:08" hostname="SL-0465" time="1.707">
   <properties/>
-  <testcase name="test" classname="Element_Basics_iOS_Local" time="9.261">
-    <failure message="org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/20201023-2952-1kv8br2.2pf9/TheApp-v1.9.0.app/Info.plist'&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SL-0465', ip: '2605:e000:1301:5c1:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'&#10;Driver info: driver.version: IOSDriver&#10;remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/20201023-2952-1kv8br2.2pf9/TheApp-v1.9.0.app/Info.plist'&#10;    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)&#10;    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:381:37)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SL-0465', ip: '2605:e000:1301:5c1:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'&#10;Driver info: driver.version: IOSDriver" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/20201023-2952-1kv8br2.2pf9/TheApp-v1.9.0.app/Info.plist'
+  <testcase name="test" classname="Element_Basics_iOS_Local" time="1.707">
+    <failure message="org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/202129-94017-1cqiuiz.kaje/TheApp-v1.9.0.app/Info.plist'&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SL-0465', ip: '2603:8000:d203:2500:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'&#10;Driver info: driver.version: IOSDriver&#10;remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/202129-94017-1cqiuiz.kaje/TheApp-v1.9.0.app/Info.plist'&#10;    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)&#10;    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:381:37)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SL-0465', ip: '2603:8000:d203:2500:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'&#10;Driver info: driver.version: IOSDriver" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/202129-94017-1cqiuiz.kaje/TheApp-v1.9.0.app/Info.plist'
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SL-0465', ip: '2605:e000:1301:5c1:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
+System info: host: 'SL-0465', ip: '2603:8000:d203:2500:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
 Driver info: driver.version: IOSDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/20201023-2952-1kv8br2.2pf9/TheApp-v1.9.0.app/Info.plist'
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/202129-94017-1cqiuiz.kaje/TheApp-v1.9.0.app/Info.plist'
     at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
     at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:381:37)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SL-0465', ip: '2605:e000:1301:5c1:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
+System info: host: 'SL-0465', ip: '2603:8000:d203:2500:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
 	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
@@ -48,8 +48,7 @@ Driver info: driver.version: IOSDriver
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -58,8 +57,7 @@ Driver info: driver.version: IOSDriver
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -79,12 +77,12 @@ Caused by: java.lang.reflect.InvocationTargetException
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-	... 60 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/20201023-2952-1kv8br2.2pf9/TheApp-v1.9.0.app/Info.plist'
+	... 58 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/202129-94017-1cqiuiz.kaje/TheApp-v1.9.0.app/Info.plist'
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SL-0465', ip: '2605:e000:1301:5c1:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
+System info: host: 'SL-0465', ip: '2603:8000:d203:2500:0:0:0:11f0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_272'
 Driver info: driver.version: IOSDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/20201023-2952-1kv8br2.2pf9/TheApp-v1.9.0.app/Info.plist'
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not extract Info.plist from application: Plist file doesn't exist: '/var/folders/cb/td3z4nss61n20wrjzwzfj2jw0000gn/T/202129-94017-1cqiuiz.kaje/TheApp-v1.9.0.app/Info.plist'
     at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
     at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:381:37)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -104,7 +102,7 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
 	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
 	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	... 65 more
+	... 63 more
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>

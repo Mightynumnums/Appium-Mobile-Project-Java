@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iOSImageInjectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-18T22:16:40" hostname="SL-0465" time="91.481">
+  <properties/>
+  <testcase name="test" classname="iOSImageInjectionTest" time="91.481"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[May 18, 2021 3:17:47 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>
