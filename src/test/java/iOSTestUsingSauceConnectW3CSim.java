@@ -13,9 +13,6 @@ public class iOSTestUsingSauceConnectW3CSim {
   private static final String sauceUser = System.getenv("ALEKS.SHINELEVA");
     private static final String sauceKey = System.getenv("SAUCE_ACCESS_KEY");
     private static final String sauceTunnel = System.getenv("SAUCE_TUNNEL");
-//    private static final String sauceUser = "alekstestsauce";
-//    private static final String sauceKey = "b5a49da9-1673-4573-906b-8af3b70991d5";
-//    private static final String sauceTunnel = "f5f6d0e4551e443992265560f301d4c6";
 
     String url = "http://"+sauceUser+":"+sauceKey+"@ondemand.us-west-1.saucelabs.com/wd/hub";
 
